@@ -1,0 +1,251 @@
+$linkedinBlue1: #0072b1;
+$linkedinBlue2: #0073b1;
+$linkedinBlue3: #004c75;
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.login-wrapper {
+  background-color: #F3F2F0 !important;
+  height: 90vh;
+  padding: 20px;
+  // border: 2px solid;
+  display: flex;
+  flex-direction: column;
+
+  .heading_text {
+    color: rgb(178, 64, 32);
+    // font-style: normal;
+    // font-weight: 50;
+    font-size: 50px;
+    font-family: "Rajdhani", sans-serif;
+    margin-left: 70px;
+  }
+  .label{
+    position: relative;
+    top: 7px;
+    font-size: 12px;
+    font-weight: 200;
+
+  }
+.auth_container{
+  display: flex;
+
+}
+.common-input{
+  width: 500px;
+  height: 8px;
+}
+  .login-wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 25%;
+    margin-left: 70px;
+    // border: 2px solid;
+    margin-bottom: 20px;
+    // margin: 0 auto;
+  }
+
+  .heading {
+    font-family: system-ui BlinkMacSystemFont "Segoe UI"
+      Roboto "Helvetica Neue"
+      "Fira Sans"
+      Ubuntu Oxygen "Oxygen Sans"
+      Cantarell "Droid Sans"
+      "Apple Color Emoji"
+      "Segoe UI Emoji"
+      "Segoe UI Emoji"
+      "Segoe UI Symbol"
+      "Lucida Grande"
+      Helvetica Arial sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+    font-weight: 400;
+    size: 32px;
+    line-height: normal;
+    // background-color: #0072b1;
+
+
+  }
+
+  .sub-heading {
+    margin-top: -20px;
+    font-family: system-ui;
+  }
+}
+
+.login-btn {
+  width: 500px;
+  height: 50px;
+  cursor: pointer;
+  background-color: $linkedinBlue2;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-family: system-ui;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  background-color: $linkedinBlue3;
+}
+
+.auth-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  
+}
+
+.auth-inputs input {
+  padding: 15px;
+}
+
+.register_component {
+  height: 300px;
+  padding: 20px;
+  // border: 2px solid black;
+  height: 150vh;
+
+}
+
+.linkedinLogo {
+  // width: 100px;
+  border: 2px solid;
+  // margin-left: 20px;
+  position: relative;
+  left: 10px;
+}
+
+.illu{
+  height: 100%;
+  width: auto;
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+}
+
+
+.google-btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .google-btn {
+    width: 300px !important;
+  }
+
+  .go-to-signup {
+    font-size: 18px;
+    position: relative;
+    bottom: 30px;
+    left: 6px;
+  }
+
+  .join-now {
+    color: $linkedinBlue1;
+    font-family: system-ui;
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .login-wrapper {
+    height: 100vh;
+    position: fixed;
+    // border: 2px solid black;
+   
+
+    .heading_text {
+      margin-top: 20px;
+      margin-left: 20px;
+      font-weight: 200px;
+      font-size: 36px;
+      // border: 2px solid black;
+
+    }
+
+
+    .login-wrapper-inner {
+      width: 100%;
+      // border: 2px solid black;
+      margin-bottom: 20px;
+
+    }
+
+    .heading {
+      font-family: system-ui BlinkMacSystemFont "Segoe UI"
+        Roboto "Helvetica Neue"
+        "Fira Sans"
+        Ubuntu Oxygen "Oxygen Sans"
+        Cantarell "Droid Sans"
+        "Apple Color Emoji"
+        "Segoe UI Emoji"
+        "Segoe UI Emoji"
+        "Segoe UI Symbol"
+        "Lucida Grande"
+        Helvetica Arial sans-serif;
+      color: rgba(0, 0, 0, 0.9);
+      font-weight: 500;
+      size: 32px;
+      line-height: normal;
+
+
+
+    }
+    .register_component{
+      margin-top: 80px;
+      width: 100%;
+      margin-left: 20px;
+    } 
+    
+
+  }
+
+}
+
+
+// .login-wrapper-inner {
+//   .heading_text {
+//     font-weight: 2px;
+//     font-size: 10px;
+
+//   }
+// }
+
+.login-btn {
+  // max-width: 300px;
+  width: 350px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  right: 10px;
+}
+
+.auth-inputs,
+.auth-inputs input {
+  max-width: 300px;
+}
+
+// .google-btn {
+//   max-width: 250px !important;
+// }
+
+.linkedinLogo {
+  width: 60px;
+  margin-left: 4rem;
+  // border: 2px solid black;
+}
